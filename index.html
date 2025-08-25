@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Calculator</title>
+    <title>Animated Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="calculator">
-        <div class="calculator__output" id="display">0</div>
-        <div class="calculator__keys">
-            <button class="calculator__key calculator__key--operator" data-action="clear">AC</button>
-            <button class="calculator__key calculator__key--operator" data-action="toggle-sign">+/-</button>
-            <button class="calculator__key calculator__key--operator" data-action="percent">%</button>
-            <button class="calculator__key calculator__key--operator" data-action="divide">/</button>
-            <button class="calculator__key" data-value="7">7</button>
-            <button class="calculator__key" data-value="8">8</button>
-            <button class="calculator__key" data-value="9">9</button>
-            <button class="calculator__key calculator__key--operator" data-action="multiply">*</button>
-            <button class="calculator__key" data-value="4">4</button>
-            <button class="calculator__key" data-value="5">5</button>
-            <button class="calculator__key" data-value="6">6</button>
-            <button class="calculator__key calculator__key--operator" data-action="subtract">-</button>
-            <button class="calculator__key" data-value="1">1</button>
-            <button class="calculator__key" data-value="2">2</button>
-            <button class="calculator__key" data-value="3">3</button>
-            <button class="calculator__key calculator__key--operator" data-action="add">+</button>
-            <button class="calculator__key calculator__key--zero" data-value="0">0</button>
-            <button class="calculator__key" data-action="decimal">.</button>
-            <button class="calculator__key calculator__key--enter" data-action="calculate">=</button>
+    <div class="calculator-container">
+        <div class="calculator-title">Calculator</div>
+        <div class="calculator">
+            <div class="calculator-display">
+                <div class="calculator-history"></div>
+                <div class="calculator-output">0</div>
+            </div>
+            <div class="calculator-keys">
+                <button class="key" data-action="clear">AC</button>
+                <button class="key key-operator" data-action="percent">%</button>
+                <button class="key key-operator" data-action="divide">÷</button>
+                <button class="key key-operator" data-action="multiply">×</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="key key-operator" data-action="subtract">−</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key key-operator" data-action="add">+</button>
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key key-decimal" data-action="decimal">.</button>
+                <button class="key key-zero">0</button>
+                <button class="key key-equal" data-action="calculate">=</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
